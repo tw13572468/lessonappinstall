@@ -4,9 +4,10 @@ html<!DOCTYPE html>
     <meta charset="utf-8">
     <title>BookaSession</title>
     <script>
-      var hostUID = new URLSearchParams(window.location.search).get('hostUID') || '';
+      //var hostUID = new URLSearchParams(window.location.search).get('hostUID') || '';
       // Try to open the app via custom scheme
-      window.location = 'lesson://invite?hostUID=' + hostUID;
+      //window.location = 'lesson://invite?hostUID=' + hostUID;
+      window.location = 'lesson://'
       // After a short delay, if the app didn't open, redirect to App Store
       setTimeout(function() {
         window.location = 'https://apps.apple.com/app/id5F83KRY2FH';
