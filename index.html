@@ -2,10 +2,18 @@ html<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=https://apps.apple.com/app/id5F83KRY2FH">
     <title>BookaSession</title>
+    <script>
+      var hostUID = new URLSearchParams(window.location.search).get('hostUID') || '';
+      // Try to open the app via custom scheme
+      window.location = 'lesson://invite?hostUID=' + hostUID;
+      // After a short delay, if the app didn't open, redirect to App Store
+      setTimeout(function() {
+        window.location = 'https://apps.apple.com/app/id5F83KRY2FH';
+      }, 1500);
+    </script>
   </head>
   <body>
-    <p>Redirecting to the App Store…</p>
+    <p>Opening BookaSession…</p>
   </body>
 </html>
