@@ -1,1 +1,12 @@
-
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": "X834Q8SBVP.org.telegram.TelegramEnterprise",
+        "components": [
+          { "/": "/invite*", "comment": "Referral invite links" }
+        ]
+      }
+    ]
+  }
+}
