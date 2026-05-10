@@ -6,7 +6,7 @@ html<!DOCTYPE html>
     <script>
       var hostUID = new URLSearchParams(window.location.search).get('hostUID') || '';
       // Try to open the app via custom scheme
-      window.location = 'BookaSession://invite?hostUID=' + hostUID;
+      window.location = 'bookasession://invite?hostUID=' + hostUID;
       //window.location = 'BookaSession://'
       // After a short delay, if the app didn't open, redirect to App Store
       // setTimeout(function() {
